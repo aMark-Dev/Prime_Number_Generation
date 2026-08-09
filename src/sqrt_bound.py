@@ -7,7 +7,7 @@ def sqrt_bound(n):
 
         for num in prime_numbers_list:
 
-            if k % num: break
+            if k % num == 0: break
 
             if num**2 > k:
                 prime_numbers_list.append(k)
@@ -15,5 +15,5 @@ def sqrt_bound(n):
 
         k+=1
 
-        #If you want the list of prime numbers, you do use:
-        #return prime_numbers_list
+    #If you want the list of prime numbers, you do use:
+    return prime_numbers_list
